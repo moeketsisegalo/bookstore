@@ -34,7 +34,7 @@ The importance of this program lies in its ability to simplify the inventory man
 *4. Search for a book*
 ![Search Book](./screenshots/search_book.png)
 *5. View All*
-![View Book](./screenshots/view_book.png)
+![View Book](./screenshots/view_all.png)
 *6. Quit*
 
 5.Enter the number corresponding to the option you want to select and press enter.
