@@ -26,10 +26,15 @@ The importance of this program lies in its ability to simplify the inventory man
 *Welcome to the bookstore database!*
 *Please select an option below by entering a number?*
 *1. Add a new book*
+![Add Book](./screenshots/add_book.png)
 *2. Update book information*
+![update Book](./screenshots/update_book.png)
 *3. Delete a book*
+![Delete Book](./screenshots/delete_book.png)
 *4. Search for a book*
+![Search Book](./screenshots/search_book.png)
 *5. View All*
+![View Book](./screenshots/view_book.png)
 *6. Quit*
 
 5.Enter the number corresponding to the option you want to select and press enter.
