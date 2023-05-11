@@ -1,23 +1,23 @@
 # bookstore
 
-##**Table of Contents:**
+## **Table of Contents:**
 1.Description
 2.Installation
 3.Usage
 4.Credits
 
-##**description**
+## **description**
 The Bookstore Clerk program is a tool that allows bookstore clerks to manage the inventory of a bookstore. The program provides several functionalities that enable clerks to easily add, update, delete, and search for books in the bookstore's database. With this program, clerks can efficiently manage the bookstore's inventory, ensuring that the store has up-to-date information on all available books.
 
 The importance of this program lies in its ability to simplify the inventory management process for bookstore clerks. By providing an easy-to-use tool for managing book information, clerks can spend more time serving customers and less time managing inventory. Additionally, the program enables clerks to quickly find specific books in the store's inventory, making it easier for them to assist customers in finding the books they need.
 
-##**Installation**
+## **Installation**
 1.Clone the repository to your local machine using Git
 2.Open the project folder in your preferred Integrated Development Environment (IDE), such as Visual Studio Code.
 3.Run the bookstore.py file from your IDE by clicking the "Run" button or using the keyboard shortcut.
 4.The program will start running and you will be prompted with a menu of options to choose from.
 
-##**Usage**
+## **Usage**
 1.Open your preferred Integrated Development Environment (IDE) on your computer. I recommend using Visual Studio Code as it is free and supports multiple programming languages.
 2.Open the bookstore.py file in your IDE.
 3.Run the program by clicking the "Run" button or by typing python bookstore.py in the terminal within your IDE.
