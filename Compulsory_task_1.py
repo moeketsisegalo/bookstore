@@ -1,3 +1,7 @@
+'''This script creates a SQLite database called 'bookstore.db', and defines several functions to manipulate the data in the database.
+The database stores information about books such as their title, author, publisher, price, and quantity.
+The functions defined include adding a new book to the database, updating the price of a book, deleting a book from the database, searching for a book in the database, and viewing all books in the database.'''
+
 import sqlite3
 
 # Connect to the database
