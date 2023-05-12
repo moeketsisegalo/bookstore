@@ -13,25 +13,44 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS books
               price FLOAT,
               quantity INTEGER)''')
 
-# Define a function to add a new book to the database
+# Define a function to add books in the database
 def add_books():
-    title = input("Enter book title: ")
-    author = input("Enter author name: ")
-    publisher = input("Enter publisher name: ")
-    price = float(input("Enter book price: R "))
-    quantity = int(input("Enter book quantity: "))
-    cursor.execute('''INSERT INTO books (title, author, publisher, price, quantity) 
-                      VALUES (?, ?, ?, ?, ?)''', (title, author, publisher, price, quantity))
-    db.commit()
-    print("book succesfully added to the database.")
-
+    try:
+        # Prompt user for book information
+        title = input("Enter book title: ")
+        author = input("Enter author name: ")
+        publisher = input("Enter publisher name: ")
+        price = float(input("Enter book price: R "))
+        quantity = int(input("Enter book quantity: "))
+        
+        # Insert book into database
+        cursor.execute('''INSERT INTO books (title, author, publisher, price, quantity) 
+                          VALUES (?, ?, ?, ?, ?)''', (title, author, publisher, price, quantity))
+        db.commit()
+        
+        # Print success message
+        print("Book successfully added to the database.")
+    except ValueError:
+        # Handle invalid input
+        print("Error: Please enter a valid price and quantity.")
 
 # Define a function to update the price of a book
 def update_book_price():
+    # Prompt user for book title and new price
     title = input("Enter the title of the book you want to update: ").lower()
-    new_price = float(input("Enter the new price for the book: R "))
+    while True:
+        try:
+            new_price = float(input("Enter the new price for the book: R "))
+            break
+        except ValueError:
+            # Handle invalid input
+            print("Error: Please enter a valid price.")
+    
+    # Update book price in database
     cursor.execute('''UPDATE books SET price = ? WHERE lower(title) = ?''', (new_price, title))
     db.commit()
+    
+    # Print success message
     print("Book updated successfully.")
 
 # Define a function to delete a book from the database
